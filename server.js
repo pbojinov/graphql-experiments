@@ -3,11 +3,11 @@ import GraphQLHTTP from 'express-graphql';
 import schema from './data/schema';
 
 const app = express();
-const PORT = 1234;
+const PORT = 8888;
 
 app.use('/GraphQL', GraphQLHTTP({
   schema,
-  grahpiql: true
+  graphiql: true
 }));
 
 app.listen(PORT, () => {
